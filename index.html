@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Organisasi Persatuan Penduduk Seksyen 6</title>
+    <style>
+        :root {
+            --primary-blue: #1e3d59;
+            --bg-light: #f7f9fa;
+            --text-dark: #333333;
+            --border-color: #e1e8ed;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid var(--primary-blue);
+            padding-bottom: 20px;
+        }
+
+        .header-section h1 {
+            color: var(--primary-blue);
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .header-section h2 {
+            font-size: 18px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .chart-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .chart-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .info-note {
+            background-color: #e8f4fd;
+            border-left: 5px solid #1d9bf0;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Membina susun atur grid untuk biro */
+        .grid-biro {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card-biro {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .card-biro:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .biro-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Warna biro mengikut template asal gambar */
+        .bg-keselamatan { background-color: #0d3b66; }
+        .bg-kebersihan { background-color: #4a2840; }
+        .bg-sukan { background-color: #1b4d3e; }
+        .bg-kebajikan { background-color: #b5651d; }
+        .bg-komunikasi { background-color: #7a1b1b; }
+
+        .member-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 14px;
+        }
+
+        .member-list li {
+            padding: 6px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .member-list li:last-child {
+            border-bottom: none;
+        }
+
+        .leader {
+            font-weight: bold;
+            color: #111;
+        }
+
+        .contact-btn {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .contact-btn:hover {
+            background-color: #122538;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            .header-section h1 { font-size: 18px; }
+            .header-section h2 { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-section">
+        <h1>Persatuan Penduduk Seksyen 6 Bandar Bukit Mahkota</h1>
+        <h2>Carta Organisasi & Hubungan Biro — Sesi 2026/2028</h2>
+    </div>
+
+    <div class="info-note">
+        <strong>Nota Privasi & Keselamatan:</strong> Demi melindungi maklumat peribadi ahli jawatankuasa, nombor telefon tidak dipaparkan secara terbuka. Sila klik butang <strong>"Hubungi Biro"</strong> untuk menghantar aduan/cadangan terus kepada ketua biro yang bertanggungjawab.
+    </div>
+
+    <div class="chart-container">
+        <img src="image.png" alt="Carta Organisasi Persatuan Penduduk Seksyen 6" class="chart-img">
+    </div>
+
+    <div class="grid-biro">
+        
+        <div class="card-biro">
+            <div class="biro-title bg-keselamatan">BIRO KESELAMATAN</div>
+            <ul class="member-list">
+                <li class="leader">1. Mejar (B) Tuan Haji Razali Bin Ahmad (Ketua)</li>
+                <li>2. Ir. Dr. Haji Nor Azhadi Ngah</li>
+                <li>3. En. Norhussairi Bin Abu Hasan</li>
+                <li>4. En. Ana Bin Jailan</li>
+                <li>5. Puan Siti Aminah Binti Kadri</li>
+            </ul>
+            <a href="mailto:ajk.mahkota6@gmail.com?subject=Aduan/Cadangan Biro Keselamatan" class="contact-btn">Hubungi Biro</a>
+        </div>
+
+        <div class="card-biro">
+            <div class="biro-title bg-kebersihan">BIRO KEBERSIHAN & KECERIAAN</div>
+            <ul class="member-list">
+                <li class="leader">1. Datuk Mohd Fadzil Bin Mohd Khir (Ketua)</li>
+                <li>2. En. Roslee Bin Daie</li>
+                <li>3. En. Ahmad Aidil Bin Misbah</li>
+                <li>4. Puan Rosminah Md Noh</li>
+                <li>5. En. Norhaizat Bin Zainal Abidin</li>
+            </ul>
+            <a href="mailto:ajk.mahkota6@gmail.com?subject=Aduan/Cadangan Biro Kebersihan" class="contact-btn">Hubungi Biro</a>
+        </div>
+
+        <div class="card-biro">
+            <div class="biro-title bg-sukan">BIRO SUKAN & SOSIAL</div>
+            <ul class="member-list">
+                <li class="leader">1. En. Faizal Azrin Bin Abdul Razalim (Ketua)</li>
+                <li>2. Puan Ida Semurni Binti Abdullah Ali</li>
+                <li>3. Dr. Amir Rizaan</li>
+            </ul>
+            <a href="mailto:ajk.mahkota6@gmail.com?subject=Pertanyaan Biro Sukan/Sosial" class="contact-btn">Hubungi Biro</a>
+        </div>
+
+        <div class="card-biro">
+            <div class="biro-title bg-kebajikan">BIRO KEBAJIKAN & PENDIDIKAN</div>
+            <ul class="member-list">
+                <li class="leader">1. Prof. Madya Dr. Mokmin Bin Basri (Ketua)</li>
+                <li>2. Puan Nor Edyawati Binti Edrus</li>
+            </ul>
+            <a href="mailto:ajk.mahkota6@gmail.com?subject=Permohonan/Aduan Biro Kebajikan" class="contact-btn">Hubungi Biro</a>
+        </div>
+
+        <div class="card-biro">
+            <div class="biro-title bg-komunikasi">BIRO KOMUNIKASI</div>
+            <ul class="member-list">
+                <li class="leader">1. Tuan Haji Rushdy Bin Ahmad (Ketua)</li>
+            </ul>
+            <a href="mailto:ajk.mahkota6@gmail.com?subject=Pertanyaan Biro Komunikasi" class="contact-btn">Hubungi Biro</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
